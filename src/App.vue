@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <h1>Social Login with OAuth.io</h1>
+    <div class="row">
+      <div class="col-sm-4 social-buttons"><hr /></div>
+      <div class="col-md-4 col-md-offset-3 social-buttons">
+        <OAuth api_key="Fcdn9FAU7dhM0TzQ7umztVA28NM" provider="facebook" />
+        <OAuth api_key="Fcdn9FAU7dhM0TzQ7umztVA28NM" provider="github" />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import OAuth from "./components/OAuth";
 
 export default {
-  name: 'app',
+  name: "App",
   components: {
-    HelloWorld
+    OAuth
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
